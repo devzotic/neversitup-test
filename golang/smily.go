@@ -2,7 +2,7 @@ package main
 
 import "regexp"
 
-func countSmileys(faces []string) int {
+func CountSmilyFace(faces []string) int {
 	if len(faces) == 0 {
 		return 0
 	}

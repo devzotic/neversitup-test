@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestCountSmileys(t *testing.T) {
+func TestCountSmilyFace(t *testing.T) {
 
 	cases := []struct {
 		name     string
@@ -20,7 +20,7 @@ func TestCountSmileys(t *testing.T) {
 	for _, c := range cases {
 
 		t.Run(c.name, func(t *testing.T) {
-			got := countSmileys(c.input)
+			got := CountSmilyFace(c.input)
 			if got != c.expected {
 				t.Errorf("expected %v but got %v", c.expected, got)
 			}
