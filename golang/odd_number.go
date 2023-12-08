@@ -1,6 +1,6 @@
 package main
 
-func findOdd(nums []int) (int, bool) {
+func FindOddNumber(nums []int) (int, bool) {
 	if len(nums) == 0 {
 		return 0, false
 	}

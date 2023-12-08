@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestFindOdd(t *testing.T) {
+func TestFindOddNumber(t *testing.T) {
 
 	cases := []struct {
 		name  string
@@ -24,7 +24,7 @@ func TestFindOdd(t *testing.T) {
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
 
-			got, ok := findOdd(c.in)
+			got, ok := FindOddNumber(c.in)
 			if got != c.out {
 				t.Errorf("got %v want %v for output", got, c.out)
 			}
